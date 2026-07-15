@@ -7,7 +7,7 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
 // Zod schema for environment variable validation
 const envSchema = z.object({
-  PORT: z.string().default('5000'),
+  PORT: z.string().default('5002'),
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
   MONGO_URI: z.string().url('MONGO_URI must be a valid MongoDB connection string'),
   JWT_ACCESS_SECRET: z.string().min(32, 'JWT_ACCESS_SECRET must be at least 32 characters'),
