@@ -9,6 +9,7 @@
     "start": "node -r tsconfig-paths/register dist/server.js",
     "seed": "ts-node -r tsconfig-paths/register src/seed/index.ts",
     "seed:reset": "ts-node -r tsconfig-paths/register src/seed/reset.ts",
+    "seed:prod": "node -r tsconfig-paths/register dist/seed/index.js",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "format": "prettier --write \"src/**/*.ts\"",

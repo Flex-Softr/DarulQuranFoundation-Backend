@@ -15,6 +15,7 @@ RUN npm ci
 # Copy source and compile
 COPY . .
 RUN npm run build
+RUN npm run seed:prod
 
 # ---- Stage 2: Production ----
 FROM node:20-alpine AS runner

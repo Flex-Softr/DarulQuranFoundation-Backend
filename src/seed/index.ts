@@ -1,7 +1,6 @@
 import { connectDB } from '@/db';
 import { seedUsers } from './seedUsers';
 import { logger } from '@/modules/common/utils/logger';
-import { config } from '@/config';
 
 /**
  * Main seed function
